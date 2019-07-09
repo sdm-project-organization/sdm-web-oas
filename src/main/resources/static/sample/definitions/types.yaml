@@ -1,4 +1,6 @@
 definitions:
+
+
   Base:
     type: object
     properties:
@@ -21,6 +23,8 @@ definitions:
           description: Creation time
           example: "2015-07-07T15:49:51.230+02:00"
           readOnly: true
+
+
   User:
     type: object
     allOf:
@@ -35,6 +39,8 @@ definitions:
           type: string
         api_key:
           type: string
+
+
   Media:
     type: object
     allOf:
@@ -55,6 +61,8 @@ definitions:
         description: Name of file
       filetype:
         type: string
+
+
   Otoken:
     type: object
     allOf:
@@ -67,6 +75,8 @@ definitions:
         type: string
       project_id:
         type: string
+
+
   Project:
     type: object
     allOf:
@@ -82,6 +92,8 @@ definitions:
       owned_by:
         type: string
         description: The ID of the user that this project is owned by
+
+
   Activity:
     type: object
     allOf:
@@ -105,6 +117,8 @@ definitions:
       part_of:
         type: string
         description: The ID of the project that this activity is part of
+
+
   Task:
     type: object
     allOf:
@@ -126,6 +140,8 @@ definitions:
         type: string
       required:
         type: boolean
+
+
   Submission:
     type: object
     required:
@@ -140,6 +156,7 @@ definitions:
         type: string
       content:
         type: object
+
   Comment:
     type: object
     required:

@@ -97,12 +97,12 @@ paths:
 #  /tasks/{id}:
 #    {$ref: './paths/tasks.yaml#/paths/task_id'}
 
-  /submissions:
-    {$ref: './paths/submissions.yaml#/paths/submissions'}
-  /submissions/count:
-    {$ref: './paths/submissions.yaml#/paths/count'}
-  /submission/{id}:
-    {$ref: './paths/submissions.yaml#/paths/submission_id'}
+#  /submissions:
+#    {$ref: './paths/submissions.yaml#/paths/submissions'}
+#  /submissions/count:
+#    {$ref: './paths/submissions.yaml#/paths/count'}
+#  /submission/{id}:
+#    {$ref: './paths/submissions.yaml#/paths/submission_id'}
 
   /media:
     {$ref: './paths/media.yaml#/paths/media'}

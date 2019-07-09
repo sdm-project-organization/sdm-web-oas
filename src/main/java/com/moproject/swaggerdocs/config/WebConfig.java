@@ -19,7 +19,7 @@ public class WebConfig implements WebMvcConfigurer {
     // globally CORS (Cross-origin resource sharing)
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/static/**")
+        registry.addMapping("/**")
                 .allowedOrigins("*")
                 .allowCredentials(false)
                 .maxAge(3600);

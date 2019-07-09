@@ -90,12 +90,12 @@ paths:
   /activities/{id}:
     {$ref: './paths/activities.yaml#/paths/activity_id'}
 
-  /tasks:
-    {$ref: './paths/tasks.yaml#/paths/tasks'}
-  /tasks/count:
-    {$ref: './paths/tasks.yaml#/paths/count'}
-  /tasks/{id}:
-    {$ref: './paths/tasks.yaml#/paths/task_id'}
+#  /tasks:
+#    {$ref: './paths/tasks.yaml#/paths/tasks'}
+#  /tasks/count:
+#    {$ref: './paths/tasks.yaml#/paths/count'}
+#  /tasks/{id}:
+#    {$ref: './paths/tasks.yaml#/paths/task_id'}
 
   /submissions:
     {$ref: './paths/submissions.yaml#/paths/submissions'}

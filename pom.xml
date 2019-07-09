@@ -12,6 +12,7 @@
     <artifactId>oas</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>oas</name>
+    <packaging>war</packaging>
     <description>open api specification</description>
 
     <properties>
@@ -25,11 +26,11 @@
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-test</artifactId>-->
+            <!--<scope>test</scope>-->
+        <!--</dependency>-->
 
         <!-- Spring Boot : Web -->
         <dependency>

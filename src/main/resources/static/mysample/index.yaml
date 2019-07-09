@@ -1,0 +1,41 @@
+swagger: '2.0'
+
+#info:
+#  title: CCCS
+#  version: "0.1"
+#consumes:
+#- application/json
+#produces:
+#- application/json
+#securityDefinitions:
+#  apiKeyHeader:
+#    type: apiKey
+#    in: header
+#    name: X-API-KEY
+#    x-apikeyInfoFunc: decorators.access_checks.ensure_key
+#  anonUser:
+#    type: apiKey
+#    in: header
+#    name: X-ANON
+#    x-apikeyInfoFunc: decorators.access_checks.ensure_anon_key
+#  oauth2:
+#    type: oauth2
+#    flow: implicit
+#    authorizationUrl: http://localhost:8081/oauth/authorize
+#    x-tokenInfoUrl: http://localhost:8081/api/v1/users/validate
+#    scopes:
+#      apiKey: Unique identifier of the user accessing the service.
+#host: 0.0.0.0:8080
+#basePath: /api/v2
+#schemes:
+#- http
+#- https
+
+#info:
+  {$ref: 'info/index.yaml#/info/myinfo'}
+paths:
+#  $ref: ./paths/index.yaml
+  /users:
+    {$ref: 'paths/users.yaml#/paths/get_users'}
+#definitions:
+#  $ref: ./definitions/index.yaml

@@ -1,0 +1,13 @@
+
+schemas:
+
+  User:
+    properties:
+      id:
+        type: integer
+      name:
+        type: string
+    # Both properties are required
+    required:
+      - id
+      - name

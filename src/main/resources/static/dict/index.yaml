@@ -1,0 +1,44 @@
+openapi: 3.0.0
+
+info:
+  # $ref: './info.yaml#/info'
+  title: Dict API
+  description: Optional multiline or single-line description in [CommonMark](http://commonmark.org/help/) or HTML.
+  version: 0.1.9
+
+servers:
+  - url: 'http://localhost:8080/api/'
+    description: desc.. in url
+#  - url: '{protocol}://{ip}:{port}/api/'
+#    description: desc.. in url
+#    variables:
+#      protocol:
+#        enum:
+#          - http
+#          - https
+#        default: http
+#        description: variables protocol desc..
+#      ip:
+#        enum:
+#          - localhost
+#          - mo.avocadostudio.xyz
+#          - 52.79.207.63
+#        default: localhost
+#        description: variables ip desc..
+#      port:
+#        enum:
+#          - '80'
+#          - '8080'
+#        default: '8080'
+#        description: variables port desc..
+  - url: http://staging-api.example.com
+    description: Optional server description, e.g. Internal staging server for testing
+
+components:
+  schemas:
+    User:
+      $ref: './components/schemas.yaml#/schemas/User'
+
+paths:
+  /partitions:
+    $ref: './paths/partitions.yaml#/paths/~1partitions'

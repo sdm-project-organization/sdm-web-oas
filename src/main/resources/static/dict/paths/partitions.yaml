@@ -1,0 +1,105 @@
+paths:
+
+  # ~1partitions
+  /partitions:
+    summary: summary
+    description: description
+
+    # ===
+    get:
+      summary: Returns a list of users.
+      description: >
+        Optional extended description in CommonMark or HTML.
+      # must be unique
+      operationId: getUserById
+
+      # [PATH]
+#      parameters:
+#      - in: path
+#        name: userId
+#        required: true
+#        description: Parameter description in CommonMark or HTML.
+#        schema:
+#          type : integer
+#          format: int64
+#          minimum: 1
+
+      # [QUERY]
+#      parameters:
+#      - in: query
+#        name: role
+#        schema:
+#          type: string
+#          enum: [user, poweruser, admin]
+#        required: true
+
+      # [HEADER]
+#      parameters:
+#      - in: header
+#        name: X-Request-ID
+#        schema:
+#          type: string
+#          format: uuid
+#        required: true
+
+      # [COOKIE]
+#      parameters:
+#      - in: cookie
+#        name: debug
+#        schema:
+#          type: integer
+#          enum: [0, 1]
+#          default: 0
+#      - in: cookie
+#        name: csrftoken
+#        schema:
+#          type: string
+
+      # [BODY]
+      requestBody:
+        description: desc body ..
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+            examples:
+              examA:
+                summary: display-nameA
+                value:
+                  username: "userA"
+              examB:
+                summary: display-nameB
+                value:
+                  username: "userB"
+      responses:
+        '200':    # status code
+          description: A JSON array of user names
+          content:
+            application/json: # MEDIA_TYPE
+              schema:
+                $ref: '../components/schemas.yaml#/schemas/User'
+        '400':
+          description: The specified user ID is invalid (not a number).
+        '404':
+          description: A user with the specified ID was not found.
+        default:
+          description: Unexpected error
+      externalDocs:
+        description: Learn more about user operations provided by this API.
+        url: http://api.example.com/docs/user-operations/
+#    post:
+#
+#    /partitions/sequence/{sequence}:
+#      get:
+#
+#      put:
+#
+#      delete:
+#
+#    /partitions/name/{name}:
+#
+#    /partitions/serviceid/{sequence}:

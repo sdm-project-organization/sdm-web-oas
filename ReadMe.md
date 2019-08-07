@@ -29,9 +29,11 @@ YAML 파일을 통해 관리하기 위해서는 다양한 양식을 배워야 �
 
 YAML 파일을 하나로 관리하는 것은 협업 및 가독성에 좋지 않다고 판단되기 때문에 파일을 분리하여 관리합니다.
 
+IntelliJ를 사용한다면 Swagger 플러그인을 설치하여 Validation을 진행할 수 있습니다. [swagger_plugin_link](https://plugins.jetbrains.com/plugin/8347-swagger) 
 
 
-### SwaggerAnnotation
+
+> SwaggerAnnotation의 단점
 
 프로젝트에 종속되어 작업을 진행할 수 있으나, 실제 빌드와 연관되어 있지는 않습니다.
 

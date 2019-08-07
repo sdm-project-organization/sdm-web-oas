@@ -16,7 +16,11 @@ public class WebConfig implements WebMvcConfigurer {
                 .setCachePeriod(20);
     }
 
-    // globally CORS (Cross-origin resource sharing)
+    /**
+     * globally CORS (Cross-origin resource sharing)
+     *
+     * @param registry
+     * */
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/*/**")

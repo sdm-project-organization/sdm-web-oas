@@ -1,8 +1,11 @@
 openapi: 3.0.1
+# http://localhost:8080/static/sample3.0/index.yaml
+
 info:
   title: Sample API
-  description: API description in Markdown.
+  description: API description in Markdown. ..
   version: 1.0.0
+
 servers:
 - url: 'https://api.example.com'
 
